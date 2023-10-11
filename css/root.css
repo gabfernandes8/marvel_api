@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --azul: #021346;
+    --fonte: 'Avenir';
+    --azul-transparente: tomato;
+    --cinza-opacity: rgba(128, 128, 128, 0.37);
+    --cinza-search: rgba(144, 144, 144, 0.46);
+    --branco: white;
+    --branco-opacity: rgba(255, 255, 255, 0.55);
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url(../fonts/avenir/Metropolis-Light.otf) format('opentype'), url(../fonts/avenir/Metropolis-Black.otf) format('opentype'), url(../fonts/avenir/Metropolis-Regular.otf) format('opentype');
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
