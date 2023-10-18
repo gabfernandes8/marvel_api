@@ -1,6 +1,7 @@
 # 🦋 Marvel Characters & Comics 🦋
 
-<img width="478" alt="projeto-img" src="https://github.com/gabfernandes8/marvel-pwfe-api/assets/124157058/924d88d4-fa3a-43b4-bb26-48f3d2235933">
+
+<img width="750" alt="projeto-img" src="https://github.com/gabfernandes8/marvel_api/assets/124157058/f7ab4022-897a-45bb-817d-4f42a84b3d97">
 
 ---
 <br>
@@ -21,7 +22,7 @@
 
 <br>
 
-## 🦋 API'S utilizadas!
+## 🦋 api utilizada!
 
 - [Marvel Developer](https://developer.marvel.com/)
 
