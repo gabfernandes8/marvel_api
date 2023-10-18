@@ -77,7 +77,7 @@ input:focus{
     height: 60%;
 }
 
-.menu, .hamburger{
+main button{
     display: none;
 }
 
@@ -91,75 +91,11 @@ input:focus{
         width: 100%;
         height: 7vh;
         border-radius: 0;
-    }
-
-    .characters{
-        display: none;
-    }
-
-    .comics{
-        opacity: 0;
-        width: 64px;
-    }
-
-    .hamburger-menu{
-        display: flex;
-    }
-
-    .hamburger{
-        display: block;
-        z-index: 100;
-        border: none;
-        background-color: unset;
-        cursor: pointer;
-    }
-    
-    .hamburger img{
-        height: 10%;
-    }
-
-    .hamburger img[alt*='X']{
-        margin-top: 20px;
-        margin-left: 12px;
-        height: 2.8rem;
-    }
-
-    .menu {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
-        gap: 24px;
-        position: fixed;
-        transform: translateY(-100%);
-        transition: transform 0.2s;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgb(51, 51, 51);
-        color: white;
-        text-shadow: 3px 3px 1px rgb(255, 38, 38);
-        list-style: none;
-        padding-top: 4rem;
-        z-index: 5;
     }
 
-    .menu a{
-        text-decoration: none;
-        font-size: 2rem;
-        color: var(--pearl);
-        font-family: var(--text-font);
-        text-shadow: 3px 3px var(--main-color);
-        font-weight: 700;
-    }
-
-    .closeIcon {
+    .characters, .comics{
         display: none;
-     }    
-
-    .showMenu {
-        transform: translateY(0);
     }
     
     img{
@@ -196,5 +132,34 @@ input:focus{
     
     .input > img{
         height: 60%;
+    }
+    
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        align-items: center;
+        padding-bottom: 28px;
+    }
+
+    main button{
+        display: flex;
+        border: none;
+        border-radius: 20px;
+        padding: 18px 12px;
+        font-family: var(--fonte);
+        background-color: rgba(108,27,20,255);
+        color: white;
+        cursor: pointer;
+        box-shadow: 3px 3px 1px #000;
+        font-weight: 600;
+        transition: ease 0.5s;
+        width: 50%;
+        justify-content: center;
+    }
+
+    main button:last-child{
+        background-color: #663f5b;
     }
 }
