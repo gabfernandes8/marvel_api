@@ -4,6 +4,14 @@ const search = document.getElementById('input')
 let count = 0
 let busca = ''
 const main = document.querySelector('main')
+const botaoCarregarMais = document.getElementById('botao')
+
+const hideLoadingGif = () => {
+    const loadingGif = document.getElementById('loading-gif')
+    const loadingText = document.getElementById('loading-text')
+    loadingGif.style.display = 'none'
+    loadingText.style.display = 'none'
+}
 
 const getCharacters = async (busca) => {
     let privateKey = '79b4741739b1a6a132572bf4fdf28575c4dcc88e'
@@ -54,16 +62,14 @@ const createImg = (character) => {
 
 }
 
-
-const botaoCarregarMais = document.getElementById('botao')
-
 const adicionarImg = () => {
     count += 20
     main.replaceChildren(galeria, botaoCarregarMais)
     getCharacters(count)
 }
 
-botaoCarregarMais.addEventListener('click', adicionarImg)
+botaoCarregarMais.addEventListener('click', adicionarImg())
+
 search.addEventListener('keyup', (e) => {
     const search = e.target.value.toLowerCase()
 

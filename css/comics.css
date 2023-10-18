@@ -121,6 +121,7 @@ button{
     font-weight: 600;
     transition: ease 0.5s;
     width: fit-content;
+    place-self: center;
 }
 
 button:hover{

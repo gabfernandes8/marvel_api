@@ -13,6 +13,7 @@ header{
     background-color: black;
     padding: 10px 25px;
     height: 10vh;
+    /* position: fixed; */
 }
 
 header img{
@@ -115,6 +116,7 @@ button{
     font-weight: 600;
     transition: ease 0.5s;
     width: fit-content;
+    place-self: center;
 }
 
 button:hover{
@@ -143,7 +145,6 @@ button:hover{
         flex-direction: column;
         gap: 10px;
         width: 100%;
-        /* padding-bottom: 15px; */
     }
     
     header img{

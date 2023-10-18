@@ -5,6 +5,13 @@ let count = 0
 let busca = ''
 const main = document.querySelector('main')
 
+const hideLoadingGif = () => {
+    const loadingGif = document.getElementById('loading-gif')
+    const loadingText = document.getElementById('loading-text')
+    loadingGif.style.display = 'none'
+    loadingText.style.display = 'none'
+}
+
 const getComics = async (busca) => {
     let privateKey = '79b4741739b1a6a132572bf4fdf28575c4dcc88e'
     let publicKey = 'bb945f50390295a6d75bc97cdbfb353a'
