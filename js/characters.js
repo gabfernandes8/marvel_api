@@ -5,12 +5,12 @@ let count = 0
 let busca = ''
 const main = document.querySelector('main')
 const botaoCarregarMais = document.getElementById('botao')
+let miranha = true
 
 const hideLoadingGif = () => {
-    const loadingGif = document.getElementById('loading-gif')
-    const loadingText = document.getElementById('loading-text')
-    loadingGif.style.display = 'none'
-    loadingText.style.display = 'none'
+    const loading = document.getElementById('loading')
+    loading.style.display = 'none'
+    miranha = false
 }
 
 const getCharacters = async (busca) => {
@@ -28,6 +28,10 @@ const getCharacters = async (busca) => {
 
 const createImg = (character) => {
 
+    if(miranha){
+        hideLoadingGif()
+    }
+
     if (character.results.length != 0){
         character.results.map((character) => {
             if (!character.thumbnail.path.includes('image_not_available')) {
@@ -44,8 +48,6 @@ const createImg = (character) => {
                 name.textContent = character.name
     
                 imgContainer.replaceChildren(tagImg, name)
-    
-                console.log(character)
     
                 galeria.appendChild(imgContainer)
             }
@@ -65,10 +67,11 @@ const createImg = (character) => {
 const adicionarImg = () => {
     count += 20
     main.replaceChildren(galeria, botaoCarregarMais)
+    console.log('shuado')
     getCharacters(count)
 }
 
-botaoCarregarMais.addEventListener('click', adicionarImg())
+botaoCarregarMais.addEventListener('click', adicionarImg)
 
 search.addEventListener('keyup', (e) => {
     const search = e.target.value.toLowerCase()

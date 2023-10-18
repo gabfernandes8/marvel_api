@@ -4,12 +4,13 @@ const search = document.getElementById('input')
 let count = 0
 let busca = ''
 const main = document.querySelector('main')
+let miranha = true
 
 const hideLoadingGif = () => {
-    const loadingGif = document.getElementById('loading-gif')
-    const loadingText = document.getElementById('loading-text')
-    loadingGif.style.display = 'none'
-    loadingText.style.display = 'none'
+    const loading = document.getElementById('loading')
+    loading.style.display = 'none'
+    miranha = false
+    console.log('tirei o miranha')
 }
 
 const getComics = async (busca) => {
@@ -27,6 +28,10 @@ const getComics = async (busca) => {
 
 const createImg = (comic) => {
     
+    if(miranha){
+        hideLoadingGif()
+    }
+
     if(comic.results.length != 0){
         comic.results.map((comic) => {
             if (!comic.thumbnail.path.includes('image_not_available')) {
