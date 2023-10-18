@@ -1,6 +1,6 @@
 # 🦋 Marvel Characters & Comics 🦋
 
-<img width="478" alt="projeto-img" src="https://github.com/gabfernandes8/marvel-pwfe-api/assets/124157058/924d88d4-fa3a-43b4-bb26-48f3d2235933">
+<img width="478" alt="projeto-img" src="https://user-images.githubusercontent.com/124157058/274400312-924d88d4-fa3a-43b4-bb26-48f3d2235933.png">
 
 ---
 <br>
