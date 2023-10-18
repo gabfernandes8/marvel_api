@@ -1,7 +1,7 @@
 # 🦋 Marvel Characters & Comics 🦋
 
 <img width="750" alt="project-img" src="https://github.com/gabfernandes8/marvel_api/assets/124157058/37651b7d-ca56-4ea6-8112-dc285e6e66dd">
----
+
 <br>
 
 ## 🦋 sobre o projeto!
