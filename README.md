@@ -22,7 +22,7 @@
 
 <br>
 
-## 🦋 api utilizadas!
+## 🦋 api utilizada!
 
 - [Marvel Developer](https://developer.marvel.com/)
 
